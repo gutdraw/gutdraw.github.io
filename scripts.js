@@ -1,4 +1,4 @@
-var panels = new Array("","panel1","panel2","panel3","panel4","panel5","panel6","panel7");
+var panels = new Array("","panel1","panel2","panel3","panel4","panel5","panel6","panel7","panel8");
 function panel(tab) {
     for (i=1; i<panels.length; i++) {
         if (i == tab) {
