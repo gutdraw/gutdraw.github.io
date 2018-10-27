@@ -4,13 +4,7 @@
   <title>Untitled Page</title>
 </head>
 <body>
-  <div>Put in your zipcode and click to tweet at your Representatives</div>
-<form id="form" action='http://gutdraw.pythonanywhere.com/zip/'>
-  <input type="number" name="zip" placeholder="Zip" value="" id="zip" required>
-  <button type="submit" id="button">Click Me!</button>
-</form>
-
-<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script>
   $(document).ready(function () {
     $("#form").on('submit', function (e) {
@@ -19,6 +13,14 @@
     });
   });
 </script>
+
+  <div>Put in your zipcode and click to tweet at your Representatives</div>
+<form id="form">
+  <input type="number" name="zip" placeholder="Zip" value="" id="zip" required>
+  <button type="submit" id="button">Click Me!</button>
+</form>
+
+
 </body>
 </html>
 
