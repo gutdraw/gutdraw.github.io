@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html dir="ltr">
+<head>
+  <title>Trick or Tweet Challenge</title>
+  <meta property="og:title" content="Trick or Tweet Challenge" />
+  <meta property="og:image" content="https://gutdraw.github.io/Challenge-Accepted-Meme.jpg" />
+<meta property="og:description" content="Put in your zipcode and click to tweet at your Representatives" />
+<meta name="twitter:title" content="Trick or Tweet Challenge" />
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="Put in your zipcode and click to tweet at your Representatives">
+<meta name="twitter:image" content="https://gutdraw.github.io/Challenge-Accepted-Meme.jpg"> 
+</head>
+<body>
+<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $("#form").on('submit', function (e) {
+      e.preventDefault();
+      window.location.href= "http://gutdraw.pythonanywhere.com/zip/" + $("#zip").val() ;
+    });
+  });
+</script>
+
+  <div><b>Put in your zipcode and click to tweet at your Representatives</b></div>
+<form id="form">
+  <input type="number" name="zip" placeholder="Zip" value="" id="zip" required>
+  <button type="submit" id="button">Click Me!</button>
+</form>
+<br>
+<br>
+<br>
+<div>share links for this site below</div>
+<br>
+<!-- AddToAny BEGIN -->
+<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+<a class="a2a_button_facebook"></a>
+<a class="a2a_button_twitter"></a>
+<a class="a2a_button_reddit"></a>
+</div>
+<script async src="https://static.addtoany.com/menu/page.js"></script>
+<!-- AddToAny END -->
+
+<br>
+<br>
+for support:
+<br>
+<br>
+<a href="https://twitter.com/zeuss_butthole?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</body>
+</html>
+
