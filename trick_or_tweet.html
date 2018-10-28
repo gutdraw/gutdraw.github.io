@@ -16,7 +16,7 @@
   $(document).ready(function () {
     $("#form").on('submit', function (e) {
       e.preventDefault();
-      window.location.replace("http://gutdraw.pythonanywhere.com/zip/" + $("#zip").val() );
+      window.location.href("http://gutdraw.pythonanywhere.com/zip/" + $("#zip").val() );
     });
   });
 </script>
