@@ -1,7 +1,7 @@
 {
     "$jason": {
         "head": {
-          
+
         "actions": {
         "$load": {
           "type": "$network.request",
@@ -24,7 +24,7 @@
             "type": "html",
             "url": "http://gutdraw.pythonanywhere.com/needle",
             "action": {
-            "trigger": "displayBanner"
+            "trigger": "load"
             }
         }
         }
