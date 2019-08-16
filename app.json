@@ -4,16 +4,11 @@
 
         "actions": {
         "reload": {
-          "type": "$network.request",
+          "type": "$reload",
           "options": {
             "url": "{{$jason.url}}",
             "data_type": "html"
-          },
-          "success": {
-            "type": "$render",
-            "options": {
-              "type": "html"
-        }
+          }
 
         }
       }
