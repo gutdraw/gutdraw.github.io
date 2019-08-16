@@ -4,7 +4,7 @@
 
         "actions": {
         "reload": {
-          "type": "$reload",
+          "type": "$util.banner",
           "options": {
             "url": "{{$jason.url}}",
             "data_type": "html"
