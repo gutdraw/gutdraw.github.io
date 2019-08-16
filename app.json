@@ -15,7 +15,7 @@
         "body": {
         "background": {
             "type": "html",
-            "url": " {{$jason.url}} : http://gutdraw.pythonanywhere.com/needle",
+            "url": "http://gutdraw.pythonanywhere.com/needle : {{$jason.url}} :",
             "action": {
             "trigger": "reload"
             }
