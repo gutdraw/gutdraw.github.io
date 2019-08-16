@@ -4,18 +4,23 @@
 
         "actions": {
         "$load": {
+          "type": "$set",
+          "options": {
+          },
+          "success": {
+            "trigger": "reload"
+          }
+        },
+        "reload": {
           "type": "$network.request",
           "options": {
-            "url": "{{$jason.url}}",
+            "url": "{{$params.issue}}",
             "data_type": "html"
           },
           "success": {
             "type": "$render",
             "options": {
               "type": "html"
-            }
-          }
-      }
         }
 
         },
