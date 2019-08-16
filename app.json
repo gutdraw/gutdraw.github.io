@@ -14,7 +14,7 @@
         "reload": {
           "type": "$network.request",
           "options": {
-            "url": "{{$params.issue}}",
+            "url": "{{$jason.url}}",
             "data_type": "html"
           },
           "success": {
