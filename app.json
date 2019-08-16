@@ -23,7 +23,9 @@
               "type": "html"
         }
 
-        },
+        }
+      }
+    },
         "body": {
         "background": {
             "type": "html",
