@@ -6,8 +6,7 @@
         "reload": {
           "type": "$render",
           "options": {
-            "url": "https://raw.githubusercontent.com/gutdraw/gutdraw.github.io/master/app.json",
-            "fwd": "{{$jason.url}}"
+            "url": "https://raw.githubusercontent.com/gutdraw/gutdraw.github.io/master/app.json"
           }
           }
 
@@ -16,7 +15,7 @@
         "body": {
         "background": {
             "type": "html",
-            "url": "'url' in $params ? $params.fwd : http://gutdraw.pythonanywhere.com/needle",
+            "url": " {{$jason.url}} : http://gutdraw.pythonanywhere.com/needle",
             "action": {
             "trigger": "reload"
             }
