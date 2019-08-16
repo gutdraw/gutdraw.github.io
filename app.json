@@ -4,10 +4,10 @@
 
         "actions": {
         "reload": {
-          "type": "$href",
+          "type": "$render",
           "options": {
-            "url": "https://raw.githubusercontent.com/gutdraw/gutdraw.github.io/master/app.json",
-            "data_type": "html",
+            "url": "https://raw.githubusercontent.com/gutdraw/gutdraw.github.io/master/app.json"
+          },
             "options": {
                   "url": "{{$jason.url}}"
                 }
