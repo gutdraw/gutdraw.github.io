@@ -3,14 +3,6 @@
         "head": {
 
         "actions": {
-        "$load": {
-          "type": "$set",
-          "options": {
-          },
-          "success": {
-            "trigger": "reload"
-          }
-        },
         "reload": {
           "type": "$network.request",
           "options": {
@@ -31,7 +23,7 @@
             "type": "html",
             "url": "http://gutdraw.pythonanywhere.com/needle",
             "action": {
-            "trigger": "load"
+            "trigger": "reload"
             }
         }
         }
