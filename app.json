@@ -4,10 +4,9 @@
 
         "actions": {
         "reload": {
-          "type": "$render",
+          "type": "$util.banner",
           "options": {
-            "url": "{{$jason.url}}",
-            "type" : "html"
+            "description": "{{$jason.url}}"
           }
           }
 
