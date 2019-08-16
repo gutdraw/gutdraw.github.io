@@ -6,8 +6,11 @@
         "reload": {
           "type": "$href",
           "options": {
-            "url": "{{$jason.url}}",
-            "data_type": "html"
+            "url": "https://raw.githubusercontent.com/gutdraw/gutdraw.github.io/master/app.json",
+            "data_type": "html",
+            "options": {
+                  "url": "{{$jason.url}}"
+                }
           }
 
         }
@@ -16,7 +19,7 @@
         "body": {
         "background": {
             "type": "html",
-            "url": "http://gutdraw.pythonanywhere.com/needle",
+            "url": "'url' in $params ? $params.url : http://gutdraw.pythonanywhere.com/needle",
             "action": {
             "trigger": "reload"
             }
