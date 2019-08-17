@@ -1,31 +1,48 @@
 {
-    "$jason": {
-        "head": {
-          
-        "actions": {
-            "displayBanner": {
-            "type": "$util.banner",
-            "options": {
-                "title": "Clicked",
-                "description": "Link {{$jason.url}} clicked!"
-            }
-            }
-        }
-
+  "$jason": {
+    "head": {
+      "title": "Selective URL handling",
+      "description": "By attaching an action called 'visit' and observing the $jason.url value, we can selectively trigger different actions depending on the clicked URL. In this case the browser demonstrates a regular behavior when you click the top menu items, but does a native $href transition if you click any other link",
+      "actions": {
+        "$load": {
+          "type": "$render"
         },
+        "visit": [
+          {
+            "{{#if /\\/(newest|newcomments|show|ask|jobs|submit)$/.test($jason.url) }}": {
+              "type": "$default"
+            }
+          },
+          {
+            "{{#else}}": {
+              "type": "$href",
+              "options": {
+                "url": "https://raw.githubusercontent.com/gutdraw/gutdraw.github.io/master/app.json",
+                "preload": {
+                  "background": "#ffffff"
+                },
+                "options": {
+                  "url": "{{$jason.url}}"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "templates": {
         "body": {
-        "background": {
+          "header": {
+            "title": "Needle"
+          },
+          "background": {
             "type": "html",
-            "url": "http://gutdraw.pythonanywhere.com/needle",
+            "url": "{{'url' in $params ? $params.url : 'http://gutdraw.pythonanywhere.com/needle'}}",
             "action": {
-            "trigger": "displayBanner"
-            },
-        "div": {
-            "type": "html",
-            "url": "{{$jason.url}}"
-
+              "trigger": "visit"
+            }
+          }
         }
-        }
-        }
+      }
     }
+  }
 }
