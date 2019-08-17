@@ -19,7 +19,12 @@
             "url": "http://gutdraw.pythonanywhere.com/needle",
             "action": {
             "trigger": "displayBanner"
-            }
+            },
+        "div": {
+            "type": "html",
+            "url": "{{$jason.url}}"
+
+        }
         }
         }
     }
