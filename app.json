@@ -6,6 +6,7 @@
         "reload": {
           "type": "$util.banner",
           "options": {
+            "title": "Clicked",
             "description": "{{$jason.url}}"
           }
           }
