@@ -32,7 +32,7 @@
       "templates": {
         "body": {
           "header": {
-            "title": "Needle"
+            "title": "needle"
           },
           "background": {
             "type": "html",
