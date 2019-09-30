@@ -40,17 +40,17 @@
             "action": {
               "trigger": "visit"
             }
+          },
+          "footer": {
+            "input": {
+              "right": {
+                "text": "Zend",
+                "action": {
+                  "type": "$reload"
+                }
+              }
+            }
           }
-        }
-      }
-    }
-  },
-  "footer": {
-    "input": {
-      "right": {
-        "text": "Zend",
-        "action": {
-          "type": "$reload"
         }
       }
     }
