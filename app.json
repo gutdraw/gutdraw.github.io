@@ -50,10 +50,16 @@
       },
               "items": [{
                 "text": "Home",
+                "style": {
+          "height": "21"
+        },
         "url": "https://raw.githubusercontent.com/gutdraw/gutdraw.github.io/master/app.json"
       },
         {
                 "text": "Reload",
+                "style": {
+          "height": "21"
+        },
         "action": {
             "type": "$reload"
           }
