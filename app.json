@@ -53,14 +53,16 @@
                 "style": {
           "height": "21"
         },
-        "url": "http://gutdraw.pythonanywhere.com/needle"
+        "url": "https://raw.githubusercontent.com/gutdraw/gutdraw.github.io/master/app.json"
       },
     {
-                "text": "Home2",
+                "text": "Reload",
                 "style": {
           "height": "21"
         },
-        "url": "http://gutdraw.pythonanywhere.com/needle"
+        "action": {
+            "type": "$reload"
+          }
       }]
             }
           }
