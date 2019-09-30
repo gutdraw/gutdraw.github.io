@@ -45,8 +45,8 @@
             "tabs": {
               "style": {
                  "background": "#ffffff",
-        "color:disabled": "#ffffff",
-        "color": "#ffffff"
+        "color:disabled": "#676767",
+        "color": "#676767"
       },
               "items": [{
                 "text": "Home",
