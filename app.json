@@ -49,12 +49,10 @@
         "color": "#ffffff"
       },
               "items": [{
-                "color": "#676767",
                 "text": "Home",
         "url": "https://raw.githubusercontent.com/gutdraw/gutdraw.github.io/master/app.json"
       },
         {
-          "color": "#676767",
                 "text": "Reload",
         "action": {
             "type": "$reload"
