@@ -42,13 +42,14 @@
             }
           },
           "footer": {
-            "input": {
-              "right": {
-                "text": "Zend",
-                "action": {
-                  "type": "$reload"
-                }
-              }
+            "tabs": {
+              "items": [{
+        "image": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/images/home.png",
+        "text": "Home",
+        "style": {
+          "height": "21"
+        },  "url": "http://gutdraw.pythonanywhere.com/needle"
+      }]
             }
           }
         }
