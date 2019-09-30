@@ -49,11 +49,12 @@
         "color": "#009efa"
       },
               "items": [{
-                "text": "Zend",
-                "action": {
-                  "type": "$reload"
-                }
-              }]
+                "text": "Home",
+                "style": {
+          "height": "21"
+        },
+        "url": "http://gutdraw.pythonanywhere.com/needle"
+      }]
             }
           }
         }
