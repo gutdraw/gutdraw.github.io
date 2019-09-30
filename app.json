@@ -44,22 +44,13 @@
           "footer": {
             "tabs": {
               "style": {
-        "background": "rgba(255,255,255,0.8)",
-        "color:disabled": "#cecece",
-        "color": "#009efa"
       },
               "items": [{
                 "text": "Home",
-                "style": {
-          "height": "21"
-        },
-        "url": "{{$jason.url}}"
+        "url": "https://raw.githubusercontent.com/gutdraw/gutdraw.github.io/master/app.json"
       },
     {
                 "text": "Reload",
-                "style": {
-          "height": "21"
-        },
         "action": {
             "type": "$reload"
           }
