@@ -54,6 +54,13 @@
           "height": "21"
         },
         "url": "http://gutdraw.pythonanywhere.com/needle"
+      },
+    {
+                "text": "Home2",
+                "style": {
+          "height": "21"
+        },
+        "url": "http://gutdraw.pythonanywhere.com/needle"
       }]
             }
           }
