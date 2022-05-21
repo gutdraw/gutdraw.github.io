@@ -21,6 +21,25 @@ export default class BbacSprite extends Sprite {
 
     this.sounds = [];
 
-    this.triggers = [];
+    this.triggers = [
+      new Trigger(Trigger.CLICKED, this.whenthisspriteclicked),
+      new Trigger(Trigger.GREEN_FLAG, this.whenGreenFlagClicked)
+    ];
+  }
+
+  *whenthisspriteclicked() {
+    yield* this.glide(1, -26, -19);
+    yield* this.wait(0.1);
+    yield* this.glide(1, -76, -39);
+  }
+
+  *whenbackdropswitchesto() {}
+
+  *whenGreenFlagClicked() {
+    yield* this.wait(8.5);
+    yield* this.glide(1, -26, -19);
+    yield* this.wait(0.1);
+    yield* this.glide(1, -76, -39);
+    yield* this.sayAndWait("Click the Monkey", 1.75);
   }
 }

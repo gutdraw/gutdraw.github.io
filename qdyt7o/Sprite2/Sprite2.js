@@ -30,7 +30,7 @@ export default class Sprite2 extends Sprite {
     this.goto(-386, 113);
     yield* this.wait(1);
     yield* this.glide(1, 19, -36);
-    yield* this.wait(4);
+    yield* this.wait(3.25);
     this.y += -1000;
   }
 }

@@ -38,7 +38,7 @@ export default class Stage extends StageBase {
 
   *whenGreenFlagClicked() {
     this.costume = "IMG_0149";
-    yield* this.wait(9);
+    yield* this.wait(7.5);
     this.costume = "IMG_0052";
   }
 }
