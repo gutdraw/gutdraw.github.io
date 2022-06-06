@@ -30,7 +30,7 @@ export default class Bananas2 extends Sprite {
   }
 
   *whenGreenFlagClicked() {
-    yield* this.sayAndWait("Click the front bananas", 2);
-    yield* this.sayAndWait("Or click the mushroom light", 2);
+    yield* this.sayAndWait("If on Mobile Refresh the page", 2);
+    yield* this.sayAndWait("Or click the mushroom light or front bananas", 2);
   }
 }
