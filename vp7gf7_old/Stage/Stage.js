@@ -13,11 +13,10 @@ export default class Stage extends StageBase {
     super(...args);
 
     this.costumes = [
-      new Costume("backdrop1", "./Stage/costumes/backdrop1.svg", {
-        x: 240,
-        y: 180
-      }),
-      new Costume("Forest", "./Stage/costumes/Forest.png", { x: 480, y: 360 })
+      new Costume("bg_banana", "./Stage/costumes/bg_banana.svg", {
+        x: 239.62011173184348,
+        y: 180.27553028980435
+      })
     ];
 
     this.sounds = [new Sound("pop", "./Stage/sounds/pop.wav")];
@@ -25,6 +24,5 @@ export default class Stage extends StageBase {
     this.triggers = [];
 
     this.vars.myVariable = 0;
-    this.vars.signal = 0;
   }
 }

@@ -15,35 +15,18 @@ export default class Mushroomlight extends Sprite {
     this.costumes = [
       new Costume(
         "mushroomLight",
-        "./Mushroomlight/costumes/mushroomLight.svg",
-        { x: 7.464917676730948, y: 17.783785491055824 }
+        "./Mushroomlight/costumes/mushroomLight.png",
+        { x: 59, y: 99 }
       )
     ];
 
     this.sounds = [];
 
-    this.triggers = [
-      new Trigger(Trigger.GREEN_FLAG, this.whenGreenFlagClicked),
-      new Trigger(Trigger.CLONE_START, this.startAsClone),
-      new Trigger(Trigger.CLICKED, this.whenthisspriteclicked)
-    ];
-  }
-
-  *whenGreenFlagClicked() {
-    this.effects.clear();
-    this.createClone();
-  }
-
-  *startAsClone() {
-    yield* this.glide(0.75, this.random(-240, 240), this.random(-180, 180));
-    this.effects.color += 35;
-    yield* this.wait(1);
-    this.effects.clear();
-    this.deleteThisClone();
+    this.triggers = [new Trigger(Trigger.CLICKED, this.whenthisspriteclicked)];
   }
 
   *whenthisspriteclicked() {
-    this.effects.clear();
-    this.createClone();
+    yield* this.sayAndWait("click the ape to jump", 1);
+    this.stage.vars.signal = -3;
   }
 }

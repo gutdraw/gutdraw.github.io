@@ -14,8 +14,8 @@ export default class Bananas extends Sprite {
 
     this.costumes = [
       new Costume("bananas", "./Bananas/costumes/bananas.svg", {
-        x: 12.207615593918462,
-        y: 11.969804900530391
+        x: 32.1479797761973,
+        y: 31.5220928306843
       })
     ];
 
@@ -24,21 +24,10 @@ export default class Bananas extends Sprite {
       new Sound("Bite", "./Bananas/sounds/Bite.wav")
     ];
 
-    this.triggers = [
-      new Trigger(Trigger.GREEN_FLAG, this.whenGreenFlagClicked)
-    ];
+    this.triggers = [new Trigger(Trigger.CLICKED, this.whenthisspriteclicked)];
   }
 
-  *whenGreenFlagClicked() {
-    this.goto(166, -141);
-    yield* this.wait(0.5);
-    while (true) {
-      while (!(this.stage.vars.signal > -1)) {
-        this.goto(166, -141);
-        yield* this.glide(3, -600, -141);
-        yield;
-      }
-      yield;
-    }
+  *whenthisspriteclicked() {
+    yield* this.sayAndWait("Banana Farmers", 2);
   }
 }
