@@ -26,3 +26,4 @@ export default class _96967876PictureLibraryDownloadDuckSvgPngIconFree extends S
     this.triggers = [];
   }
 }
+
