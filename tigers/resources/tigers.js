@@ -60,7 +60,7 @@ async function switchChain() {
   try {
     await ethereum.request({
       method: "wallet_switchEthereumChain",
-      params: [{ chainId: 1 }],
+      params: [{ chainId: "0x1" }],
     });
   } catch (err) {
     console.log(err.message);
@@ -74,7 +74,7 @@ async function connect() {
   connectButton.classList.add("button--loading");
   connectButton.textContent = "loading...";
 
-  if (window.ethereum.chainId !== 1) {
+  if (window.ethereum.chainId !== "0x1") {
     // TODO: change this to main net "0x1"
     connectButton?.removeEventListener("click", connect);
     connectButton?.addEventListener("click", switchChain);
